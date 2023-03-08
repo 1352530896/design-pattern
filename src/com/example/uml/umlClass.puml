@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Person {
+    id: Integer
+    name: String
+    setName(name: String)
+    getName(): String
+}
+
+@enduml
