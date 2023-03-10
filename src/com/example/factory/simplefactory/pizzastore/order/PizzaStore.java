@@ -4,7 +4,14 @@ package com.example.factory.simplefactory.pizzastore.order;
 public class PizzaStore {
 
     public static void main(String[] args) {
-        new OrderPizza();
+        //new OrderPizza();//不适用工厂模式
+
+        //使用简单工厂模式
+//        new OrderPizza(new SimpleFactory());
+//        System.out.println("退出程序~");
+
+        //简单工厂模式2 （静态工厂模式）
+        new OrderPizza2();
     }
 
 }
