@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Product
+
+abstract class Builder {
+    buildPartA():void
+    buildPartA():void
+    buildPartA():void
+    getResult()
+}
+
+class Director {
+    builder: Builder
+    construct()
+}
+
+class ConcreteBuilder {
+    buildPartA():void
+    buildPartB():void
+    buildPartC():void
+    getResult()
+}
+
+Builder *-- Product
+Builder ^.. ConcreteBuilder
+Director o..> Builder
+
+@enduml
